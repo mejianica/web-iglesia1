@@ -1,0 +1,57 @@
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: calc(100vh - 90px); 
+    overflow: hidden;
+}
+
+/* Video de fondo */
+.hero video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* min-width: 100%;
+    min-height: 100%; */
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    z-index: -2; /* debajo de todo */
+}
+
+/* Fondo sutil solo sobre el video */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* cambia este valor para más o menos oscuridad */
+    z-index: -1; /* entre el video y el contenido */
+}
+
+/* Contenido visible normalmente */
+.hero .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 1500px;
+    position: relative;
+    z-index: 1; /* encima del overlay y del video */
+    color: #accbe9; 
+    padding: 2rem;
+    font-weight: bolder;
+    font-family: quicksand;
+}
+.hero .content h1{
+    font-size: 9rem;
+}
+.hero .content p {
+    font-size: 2.2rem;
+    text-shadow: 1px 1px 4px rgba(236, 218, 218, 0.4);
+}
+

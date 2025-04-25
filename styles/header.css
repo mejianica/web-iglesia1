@@ -6,9 +6,7 @@
       justify-content: space-evenly;
       width: 100%;
       padding: 10px;
-      /* background-color: whitesmoke; */
       z-index: 1000;
-      /* border-bottom: 1px solid rgba(128, 128, 128, 0.205); */
       color: black;
   }
   .container .logo{
