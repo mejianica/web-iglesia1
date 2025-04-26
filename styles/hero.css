@@ -1,4 +1,4 @@
-.hero {
+#hero {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,7 +8,7 @@
 }
 
 /* Video de fondo */
-.hero video {
+#hero video {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -22,7 +22,7 @@
 }
 
 /* Fondo sutil solo sobre el video */
-.hero::before {
+#hero::before {
     content: "";
     position: absolute;
     top: 0;
@@ -34,7 +34,7 @@
 }
 
 /* Contenido visible normalmente */
-.hero .content {
+#hero .content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -47,18 +47,18 @@
     font-weight: bolder;
     font-family: quicksand;
 }
-.hero .content h1{
+#hero .content h1{
     font-size: 9rem;
     color: whitesmoke;
 }
-.hero .content h2{
+#hero .content h2{
     font-size: 6rem;
     color: whitesmoke;
 }
-.hero .content h2 span{
+#hero .content h2 span{
     color: #DF3A26;
 }
-.hero .content p {
+#hero .content p {
     font-size: 2.2rem;
     text-shadow: 1px 1px 4px rgba(236, 218, 218, 0.4);
     color: whitesmoke;
