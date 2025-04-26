@@ -1,12 +1,13 @@
 .about-us{
     display: flex;
     flex-direction: column;
-    height: 100vh;
     padding: 100px;
     max-width: 1500px;
     margin: 0 auto;
 }
 .about-us h2{
+    font-family: Poppins;
+    font-weight: 400;
     font-size: 3rem;
     text-align: center;
     margin-bottom: 50px;
@@ -19,9 +20,11 @@
 .about-us .info img{
     width: 400px;
     border-radius: 10px;
-    box-shadow: 0 0 28px #000;
+    box-shadow: 0 0 10px #000000b9;
 }
 .about-us .info p{
     font-size: 2.5rem;
     padding: 50px;
+    line-height: 40px;
+    color: #8a8989;
 }
