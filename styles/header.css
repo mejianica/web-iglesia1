@@ -8,6 +8,7 @@
       padding: 10px;
       z-index: 1000;
       color: black;
+      background-color: #fff;
   }
   .container .logo{
     display: flex;
@@ -33,6 +34,25 @@
   
   .nav-links a:hover {
       border-bottom:1px solid #e2876d;
+  }
+  .social a{
+    color: black;
+    padding: 10px;
+  
+  }
+  
+  .social-icons {
+    margin-top: 1rem;
+  }
+  
+  .social-icons a img {
+    width: 24px;
+    margin-right: 1rem;
+    transition: filter 0.3s ease;
+  }
+  
+  .social-icons a img:hover {
+    filter: grayscale(100%);
   }
   
   /* MENÚ HAMBURGUESA */
