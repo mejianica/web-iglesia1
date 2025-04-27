@@ -1,0 +1,68 @@
+/* Media query para tablets y móviles grandes */
+@media (max-width: 992px) {
+    #hero {
+        height: calc(100vh - 70px);
+    }
+
+    #hero .content {
+        padding: 1.5rem;
+    }
+
+    #hero .content h1 {
+        font-size: 6rem;
+    }
+
+    #hero .content h2 {
+        font-size: 4rem;
+    }
+
+    #hero .content p {
+        font-size: 1.8rem;
+    }
+}
+
+/* Media query para móviles */
+@media (max-width: 768px) {
+    #hero {
+        height: calc(100vh - 60px);
+    }
+
+    #hero .content {
+        padding: 1rem;
+    }
+
+    #hero .content h1 {
+        font-size: 4rem;
+    }
+
+    #hero .content h2 {
+        font-size: 3rem;
+    }
+
+    #hero .content p {
+        font-size: 1.6rem;
+    }
+}
+
+/* Media query para teléfonos muy pequeños */
+@media (max-width: 480px) {
+    #hero {
+        height: calc(100vh - 50px);
+    }
+
+    #hero .content {
+        padding: 0.5rem;
+    }
+
+    #hero .content h1 {
+        font-size: 3rem;
+    }
+
+    #hero .content h2 {
+        font-size: 2rem;
+    }
+
+    #hero .content p {
+        font-size: 1.4rem;
+    }
+}
