@@ -1,6 +1,6 @@
 .footer {
-    background-color: #333;
-    color: #0007;
+    background-color: #0007;
+    color: #fff;
     padding: 40px 0;
     text-align: center;
     height: 300px;
@@ -29,7 +29,7 @@
 }
 
 .footer-nav a:hover {
-    color: #ffd700; /* Cambia de color al pasar el mouse */
+    color: #C92128; 
 }
 
 .footer-copy {
@@ -39,8 +39,7 @@
 
 .footer p{
     font-size: 14px;
-    color: #ccc;
-    border-top: 1px solid #555;
+    color: #fff;
     padding-top: 10px;
     margin-bottom: 0;
 }
