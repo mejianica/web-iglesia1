@@ -29,13 +29,14 @@
   .accordion-header {
     display: flex;
     align-items: center;
-    /* background: #f0f0f0; */
     cursor: pointer;
     padding: 20px;
     font-size: 18px;
     font-weight: bold;
     user-select: none;
     transition: background 0.2s;
+    font-family: quicksand;
+    font-weight: 200;
   }
 
   .accordion-header:hover {

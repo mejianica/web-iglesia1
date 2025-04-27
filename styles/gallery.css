@@ -47,12 +47,19 @@
   gap: 50px;
   align-items: center;
 }
+@font-face {
+  font-family: 'Chronicle Black';
+  src: url('./fonts/chronicle-display/Chronicle Display Black.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
 .text p{
   font-size: 2rem;
   color: #fff;
   max-width: 800px;
   line-height: 35px;
   text-align: justify;
+  font-family: 'Chronicle Black', serif;
 }
 .slideshow {
   position: relative;

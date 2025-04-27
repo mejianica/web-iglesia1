@@ -6,6 +6,12 @@
     max-width: 1500px;
     margin: 0 auto;
 }
+@font-face {
+    font-family: 'Chronicle Black';
+    src: url('./fonts/chronicle-display/Chronicle Display Black.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+  }
 #about-us h2{
     font-family: Poppins;
     font-weight: 400;
@@ -29,4 +35,5 @@
     padding: 50px;
     line-height: 50px;
     color: #8a8989;
+    font-family: 'Chronicle Black', serif;
 }
