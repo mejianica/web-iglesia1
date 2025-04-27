@@ -17,7 +17,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.829); /* Oscurece, puedes ajustar la opacidad */
+  /* background: rgba(0, 0, 0, 0.829); */
+  background: rgba(0, 0, 0, 0.589);
   z-index: 1;
 }
 
