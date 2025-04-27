@@ -5,6 +5,8 @@ headers.forEach(header => {
   header.addEventListener('click', () => {
     const content = header.nextElementSibling;
     const isOpen = content.classList.contains('open');
+    
+   header.classList.toggle('active');
 
     // Cerrar todos
     document.querySelectorAll('.accordion-content').forEach(c => {
@@ -21,43 +23,21 @@ headers.forEach(header => {
 });
 
 // Botones "Ver más"
-const buttons = document.querySelectorAll('.btn-vermas');
+// const buttons = document.querySelectorAll('.btn-vermas');
 
-buttons.forEach(button => {
-  button.addEventListener('click', (e) => {
-    e.stopPropagation(); // evitar que colapse el acordeón al hacer clic
+// buttons.forEach(button => {
+//   button.addEventListener('click', (e) => {
+//     e.stopPropagation();
 
-    const extra = button.previousElementSibling;
-    const visible = extra.style.display === 'block';
+//     const extra = button.previousElementSibling;
+//     const visible = extra.style.display === 'block';
 
-    if (visible) {
-      extra.style.display = 'none';
-      button.textContent = 'Ver más';
-    } else {
-      extra.style.display = 'block';
-      button.textContent = 'Ver menos';
-    }
-  });
-});
-
-// headers.forEach(header => {
-//     header.addEventListener('click', () => {
-//       const content = header.nextElementSibling;
-//       const isOpen = content.classList.contains('open');
-  
-//       // Cerrar todos
-//       document.querySelectorAll('.accordion-content').forEach(c => {
-//         c.style.maxHeight = null;
-//         c.classList.remove('open');
-//         c.previousElementSibling.classList.remove('active'); // quitar el signo menos
-//       });
-  
-//       // Abrir el clickeado si estaba cerrado
-//       if (!isOpen) {
-//         content.style.maxHeight = content.scrollHeight + 'px';
-//         content.classList.add('open');
-//         header.classList.add('active'); // mostrar el signo menos
-//       }
-//     });
+//     if (visible) {
+//       extra.style.display = 'none';
+//       button.textContent = 'Ver más';
+//     } else {
+//       extra.style.display = 'block';
+//       button.textContent = 'Ver menos';
+//     }
 //   });
-  
+// });
