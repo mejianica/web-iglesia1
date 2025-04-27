@@ -5,10 +5,12 @@
       align-items: center;
       justify-content: space-evenly;
       width: 100%;
-      padding: 10px;
+      padding: 1rem;
       z-index: 1000;
       color: black;
       background-color: #fff;
+      position: fixed;
+      top: 0;
   }
   .container .logo{
     display: flex;
@@ -60,13 +62,12 @@
       display: none;
       flex-direction: column;
       cursor: pointer;
-      background-color:#E56A48;
       padding: 5px;
   }
   .bar {
       width: 2.5rem;
       height: 0.3rem;
-      background-color: white;
+      background-color: #CD2129;
       margin: 0.3rem 1rem;
       transition: 0.4s;
   }
@@ -79,59 +80,71 @@
     }
   }
   @media (max-width: 768px) {
-      .container {
-          padding: 1rem;
-          justify-content: space-between;
-      }
-  
-      .title {
-          font-size: 2.8rem;
-      }
-      .nav-links {
+    .container {
+        padding: 1rem;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .title {
+        font-size: 2.8rem;
+    }
+
+    .nav-links {
         overflow: hidden;
         opacity: 0;
         flex-direction: column;
         position: absolute;
-        top: 7vh;
+        top: 0;
         right: 0;
+        top: 10.5vh;
+        height: 90vh;
         width: 232px;
-        background-color: #ffff;
+        background-color: whitesmoke;
         text-align: center;
         border-radius: 0 0 10px 10px;
         gap: 2px;
         color: rgb(48, 46, 46);
-        height: 100vh;
         line-height: 25px;
         box-shadow: 0 3px 5px 0 rgb(184, 181, 181);
         transform: translateX(100%);
         transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
         display: none;
     }
-    
+
     .nav-links.active {
         display: flex;
         opacity: 1;
         transform: translateX(0);
     }
-    
-    
-      .nav-links li {
-          min-height: 5vh;
-          display: flex;
-          align-items: center; 
-          justify-content: center; 
-          border-bottom: 1px solid rgba(128, 128, 128, 0.192);
-          border-image: linear-gradient(to right, rgba(128, 128, 128, 0.048), rgba(128, 128, 128, 0.192)) 1;
-      }
-      .nav-links li a {
-          width: 100%; 
-          text-align: center; 
-          padding: 10px 0; 
-      }    
- 
-  
-      .hamburguer {
-          display: flex;
-      }
+
+    .nav-links li {
+        min-height: 5vh;
+        display: flex;
+        align-items: center; 
+        justify-content: center; 
+        border-bottom: 1px solid rgba(128, 128, 128, 0.192);
+        border-image: linear-gradient(to right, rgba(128, 128, 128, 0.048), rgba(128, 128, 128, 0.192)) 1;
+    }
+
+    .nav-links li a {
+        width: 100%; 
+        text-align: center; 
+        padding: 10px 0; 
+    }
+
+    .logo {
+      order: 11;
   }
   
+  .social {
+      display: flex;
+      gap: 10px;
+  }
+  
+  .hamburguer {
+      display: flex;
+  }
+  
+}
