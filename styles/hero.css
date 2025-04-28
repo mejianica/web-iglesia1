@@ -65,12 +65,11 @@
     color: whitesmoke;
 }
 
-/* Media query para tablets y móviles grandes */
+
 @media (min-width: 1025px) {
 
 }
 
-/* Media query para móviles */
 @media (max-width: 1024px) {
     #hero {
     }
@@ -87,77 +86,30 @@
         font-size: 1.8rem;
     }
 }
-
-/* Para pantallas de hasta 1025px */
-@media (max-width: 1025px) {
-    #about-us {
-        padding: 80px 40px;
-    }
-
-    #about-us .info {
-        gap: 30px;
-    }
-
-    #about-us .info img {
-        width: 350px;
-    }
-
-    #about-us .info p {
-        font-size: 2rem;
-        padding: 30px;
-        line-height: 40px;
-    }
-
-    #about-us h2 {
-        font-size: 2.8rem;
-    }
-}
-
-/* Para pantallas de hasta 768px */
 @media (max-width: 768px) {
-    #about-us {
-        padding: 50px 20px;
-        top: 5vh;
+    #hero .content h1 {
+        font-size: 5rem;
     }
 
-    #about-us .info {
-        flex-direction: column;
-        text-align: center;
+    #hero .content h2 {
+        font-size: 3rem;
     }
 
-    #about-us .info img {
-        width: 80%;
-        margin-bottom: 20px;
-    }
-
-    #about-us .info p {
+    #hero .content p {
         font-size: 1.5rem;
-        padding: 20px;
-        line-height: 30px;
-    }
-
-    #about-us h2 {
-        font-size: 2.5rem;
     }
 }
 
-/* Para pantallas de hasta 480px */
 @media (max-width: 480px) {
-    #about-us {
-        padding: 30px 10px;
+    #hero .content h1 {
+        font-size: 4rem;
     }
 
-    #about-us .info img {
-        width: 90%;
+    #hero .content h2 {
+        font-size: 2.3rem;
     }
 
-    #about-us .info p {
-        font-size: 1.2rem;
-        padding: 15px;
-        line-height: 25px;
-    }
-
-    #about-us h2 {
-        font-size: 2rem;
+    #hero .content p {
+        font-size: 1.5rem;
     }
 }
