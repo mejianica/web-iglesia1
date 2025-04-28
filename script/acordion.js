@@ -5,8 +5,6 @@ headers.forEach(header => {
     const content = header.nextElementSibling;
     const isOpen = content.classList.contains('open');
 
-    header.classList.toggle('active');
-
     // Cerrar todos
     document.querySelectorAll('.accordion-content').forEach(c => {
       c.style.maxHeight = null;
@@ -15,8 +13,13 @@ headers.forEach(header => {
       c.classList.remove('open');
     });
 
+    document.querySelectorAll('.accordion-header').forEach(h => {
+      h.classList.remove('active');
+    });
+
     // Abrir el clickeado si estaba cerrado
     if (!isOpen) {
+      header.classList.add('active');
       content.classList.add('open');
       content.style.maxHeight = content.scrollHeight + 'px';
       content.style.paddingTop = '30px';
