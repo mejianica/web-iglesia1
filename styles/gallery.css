@@ -34,7 +34,7 @@
     max-width: 1500px;
     margin: 0 auto;
     padding: 80px;
-    background: transparent;
+    /* background: transparent; */
 }
 #gallery h2{
     font-family: Poppins;
@@ -56,7 +56,7 @@
   font-style: normal;
 }
 .text p{
-  font-size: 2rem;
+  font-size: 2.3rem;
   color: #fff;
   max-width: 800px;
   line-height: 35px;
@@ -68,7 +68,7 @@
   width: 800px;
   height: 400px;
   overflow: hidden;
-  border-radius: 15px;
+  border-radius: 6px;
   box-shadow: 1px 1px 7px rgb(238, 229, 229);
 }
 
@@ -134,9 +134,20 @@
 .caption:nth-child(6) {
   animation-delay: 16s;
 }
-
+@media (min-width: 1025px) and (max-width: 1440px) {
+  #container-about-us {
+    clip-path: polygon(0% 0%, 50% 5%, 100% 0%, 100% 100%, 0% 100%);   
+  }
+  .text p {
+    font-size: 2.1rem;
+    line-height: 30px;
+  }
+}
 /* Para pantallas de hasta 1025px */
-@media (max-width: 1025px) {
+@media (max-width: 1024px) {
+  #container-about-us {
+    clip-path: polygon(0% 0%, 50% 3%, 100% 0%, 100% 100%, 0% 100%);   
+  }
   #gallery {
     padding: 60px 30px;
   }
@@ -147,17 +158,18 @@
   }
 
   .slideshow {
-    width: 700px;
+    max-width: 700px;
+    width: 80%;
     height: 350px;
   }
 
   .text p {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     line-height: 30px;
   }
 
   #gallery h2 {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
   }
 }
 
@@ -165,10 +177,10 @@
 @media (max-width: 768px) {
   #gallery {
     padding: 40px 20px;
-    
   }
 
   #container-about-us {
+    background-attachment: scroll;/*desactiva efecto parallax*/
     clip-path: none; 
   }
 
@@ -180,17 +192,18 @@
 
   .slideshow {
     width: 90%;
-    height: 300px;
+    max-width: 550px;
+    height: 340px;
+    border-radius: 5px;
   }
-
   .text p {
-    font-size: 1.5rem;
+    font-size: 2rem;
     line-height: 28px;
-    padding: 0 10px;
+    padding: 0 20px;
   }
 
   #gallery h2 {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -205,14 +218,16 @@
   }
 
   .slideshow {
-    width: 100%;
+    width: 90%;
     height: 250px;
+    border-radius: 2px;
   }
 
   .text p {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     line-height: 24px;
     padding: 0 5px;
+    text-align: center;
   }
 
   #gallery h2 {
