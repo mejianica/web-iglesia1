@@ -33,7 +33,7 @@
     align-items: center;
     cursor: pointer;
     padding: 20px;
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: bold;
     user-select: none;
     transition: background 0.2s;
@@ -50,14 +50,17 @@
     align-items: center;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease;
+    transition: max-height 0.5s ease, padding 0.5s ease;
     background: #fff;
-    font-size: 16px;
+    font-size: 1.7rem;
+    color: #7e7779;
+    padding: 0 20px; 
   }
-
+  
   .accordion-content.open {
-    padding: 20px;
+    background-color: #e0e0e057;
   }
+  
 
   .extra-content {
     display: none;
@@ -96,3 +99,51 @@
     color: #dc3545;
   }
    
+  @media (max-width: 1024px) {
+    #What-You-Need-to-Know {
+      padding: 100px 30px;
+    }
+    #What-You-Need-to-Know h2{
+      font-size: 2.8rem;
+    }
+    .accordion-header {
+      padding: 20px;
+      font-size: 1.5rem;
+    }
+
+  }
+  
+  @media (max-width: 768px) {
+    #What-You-Need-to-Know {
+      padding: 40px 20px;
+    }
+    
+    #What-You-Need-to-Know h2{
+      font-size: 2.5rem;
+    }
+    .accordion-header {
+      padding: 20px 10px;
+      font-size: 1.4rem;
+    }
+    .accordion-header::before {
+      right: 15px;
+      font-size: 2.5rem;
+    }
+    .accordion-content {
+      font-size: 1.5rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    #What-You-Need-to-Know h2{
+      font-size: 2rem;
+    }
+    .accordion-header {
+      padding: 20px 10px;
+      font-size: 1.2rem;
+    }
+    .accordion-content {
+      font-size: 1.2rem;
+    }
+  }
+  
