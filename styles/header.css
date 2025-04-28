@@ -5,13 +5,13 @@
       align-items: center;
       justify-content: space-evenly;
       width: 100%;
-      /* padding: 1rem; */
+      padding: 1rem;
       z-index: 1000;
       color: black;
       background-color: #fff;
       position: fixed;
       top: 0;
-      height: 10vh;
+      min-height: 10vh;
   }
   .container .logo{
     display: flex;
