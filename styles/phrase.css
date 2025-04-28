@@ -1,20 +1,20 @@
 /* Sección frase */
+
+#padre-phrase{ 
+  position: relative;
+  top: 10vh;
+  background-color: #3d4144;
+}
 #phrase {
     display: flex;
     flex-wrap: wrap; /* Asegura que se acomode en columnas si no cabe en una sola línea */
-    /* max-width: 1500px; */
+    max-width: 1500px;
     margin: 0 auto;
     align-items: center;
     justify-content: space-around;
     padding: 100px 20px;
     gap: 40px;
-    background-color:#292F36;
-  }
-
-  #padre-phrase{ 
-    background-color: #292F36;
-  }
-  
+  }  
   /* Texto */
   #phrase .txt-container {
     display: flex;
