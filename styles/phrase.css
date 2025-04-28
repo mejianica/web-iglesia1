@@ -48,8 +48,8 @@
   /* Imagen */
   #phrase .phrase-img {
     display: flex;
-    width: 48%;
-    min-width: 280px;
+    width: 450px;
+    min-width: 450px;
     justify-content: center;
   }
   
