@@ -1,7 +1,7 @@
 /* Media query para tablets y móviles grandes */
 @media (max-width: 992px) {
     #hero {
-        height: calc(100vh - 70px);
+        /* height: calc(100vh - 70px); */
     }
 
     #hero .content {
@@ -24,7 +24,7 @@
 /* Media query para móviles */
 @media (max-width: 768px) {
     #hero {
-        height: calc(100vh - 60px);
+        /* height: calc(100vh - 60px); */
     }
 
     #hero .content {
@@ -47,7 +47,7 @@
 /* Media query para teléfonos muy pequeños */
 @media (max-width: 480px) {
     #hero {
-        height: calc(100vh - 50px);
+        /* height: calc(100vh - 50px); */
     }
 
     #hero .content {

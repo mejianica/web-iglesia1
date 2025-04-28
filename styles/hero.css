@@ -1,10 +1,11 @@
 #hero {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 90px); 
+    min-height: 90vh; 
     overflow: hidden;
-    margin-top: 10vh;
+    top: 10vh;
 }
 
 /* Video de fondo */

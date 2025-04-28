@@ -1,5 +1,7 @@
 
 #about-us{
+    position: relative;
+    top: 10vh;
     display: flex;
     flex-direction: column;
     padding: 100px;

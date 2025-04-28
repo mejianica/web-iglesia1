@@ -1,5 +1,6 @@
 #container-about-us {
   position: relative;
+  top: 10vh;
   background-image: url("../img/gallery/1.webp");
   background-position: center;
   background-size: cover;
