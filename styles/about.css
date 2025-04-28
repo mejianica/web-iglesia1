@@ -39,3 +39,31 @@
     color: #8a8989;
     font-family: 'Chronicle Black', serif;
 }
+
+
+@media (max-width: 768px) {
+    #about-us {
+        padding: 50px 20px;
+        top: 5vh;
+    }
+
+    #about-us .info {
+        flex-direction: column; /* Coloca imagen y texto en columna */
+        text-align: center;
+    }
+
+    #about-us .info img {
+        width: 80%; /* Que la imagen no sea tan grande en móviles */
+        margin-bottom: 20px;
+    }
+
+    #about-us .info p {
+        font-size: 1.5rem;
+        padding: 20px;
+        line-height: 30px;
+    }
+
+    #about-us h2 {
+        font-size: 2.5rem;
+    }
+}
