@@ -40,9 +40,19 @@
     font-family: 'Chronicle Black', serif;
 }
 
+@media (min-width: 1025px) and (max-width: 1440px) {
+    #about-us{
+        padding: 80px;
+    }
+    #about-us .info img{
+        width: 380px;
+    }
+    #about-us .info p{
+        line-height: 40px;
+    }
+}
 
-
-@media (max-width: 1025px) {
+@media (max-width: 1024px) {
     #about-us {
         padding: 80px 40px;
     }
@@ -52,11 +62,11 @@
     }
 
     #about-us .info img {
-        width: 350px;
+        width: 40%;
     }
 
     #about-us .info p {
-        font-size: 2rem;
+        font-size: 2.2rem;
         padding: 30px;
         line-height: 40px;
     }
@@ -69,21 +79,21 @@
 @media (max-width: 768px) {
     #about-us {
         padding: 50px 20px;
-        /* top: 5vh; */
     }
 
     #about-us .info {
-        flex-direction: column; /* Coloca imagen y texto en columna */
+        flex-direction: column; 
         text-align: center;
     }
 
     #about-us .info img {
-        width: 80%; /* Que la imagen no sea tan grande en móviles */
+        min-width: 240px;
+        width: 40%; 
         margin-bottom: 20px;
     }
 
     #about-us .info p {
-        font-size: 1.5rem;
+        font-size: 2rem;
         padding: 20px;
         line-height: 30px;
     }
@@ -101,9 +111,11 @@
     #about-us .info img {
         width: 90%;
     }
-
+    #about-us .info{
+        gap: 0px;
+    }
     #about-us .info p {
-        font-size: 1.2rem;
+        font-size: 1.6rem;
         padding: 15px;
         line-height: 25px;
     }
