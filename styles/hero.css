@@ -65,3 +65,47 @@
     color: whitesmoke;
 }
 
+/* Media query para tablets y móviles grandes */
+@media (min-width: 1025px) {
+
+}
+
+/* Media query para móviles */
+@media (max-width: 1024px) {
+    #hero {
+    }
+
+    #hero .content h1 {
+        font-size: 7rem;
+    }
+
+    #hero .content h2 {
+        font-size: 4rem;
+    }
+
+    #hero .content p {
+        font-size: 1.8rem;
+    }
+}
+
+/* Media query para teléfonos muy pequeños */
+@media (max-width: 480px) {
+    #hero {
+    }
+
+    #hero .content {
+        padding: 0.5rem;
+    }
+
+    #hero .content h1 {
+        font-size: 3rem;
+    }
+
+    #hero .content h2 {
+        font-size: 2rem;
+    }
+
+    #hero .content p {
+        font-size: 1.4rem;
+    }
+}
