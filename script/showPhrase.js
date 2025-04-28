@@ -5,7 +5,7 @@ const frases = [
     "Jehová es mi pastor, nada me faltará.",
     "El da esfuerzo al cansado, y multiplica las fuerzas al que no tiene ningunas.",
     "Lámpara es a mis pies tu palabra,y luz a mi camino.",
-    "El que habita al abrigo del Altísimo. Morará bajo la sombra del Omnipotente.."
+    "El que habita al abrigo del Altísimo. Morará bajo la sombra del Omnipotente."
 ];
 // Array de autores correspondientes
 const autores = [
