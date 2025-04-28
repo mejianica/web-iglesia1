@@ -14,7 +14,6 @@
     max-width: 1500px;
     margin: 0 auto;
     padding: 100px 0;
-    flex-wrap: wrap;
   }
   #contact .details{
     display: flex;
@@ -24,6 +23,7 @@
    gap: 30px;
    color: rgb(71, 71, 71);
    height: 100%;
+   min-width: 500px;
   }
   #contact .details p{
    font-size: 2.2rem;
@@ -183,3 +183,112 @@
       font-size: 1.5rem;
       font-family: Arial, Helvetica, sans-serif;
     }
+
+    @media (min-width: 1025px) and (max-width: 1440px) {
+      #contact {
+        gap: 100px;
+        padding: 100px;
+      }
+      #contact .details {
+        min-width: 300px;
+      }
+      #contact .form-container {
+        width: 400px;
+      }
+    }
+    
+    @media (min-width: 769px) and (max-width: 1024px) {
+      #contact {
+        gap: 10px;
+        padding: 60px 20px;
+      }
+      #contact .details {
+        min-width: 300px;
+        font-size: 2.5rem;
+      }
+      #contact .details p {
+        font-size: 1.8rem;
+      }
+      #contact .form-container {
+        width: 400px;
+      }
+    }
+    
+    @media (min-width: 481px) and (max-width: 768px) {
+      #contact {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        padding: 40px 20px;
+        text-align: center;
+      }
+      #contact h2{
+        font-size: 2.5rem;
+      }
+      #contact .details {
+      min-width: 200px;
+      display: flex;
+      align-items: center;
+      }
+      #contact .details p {
+        font-size: 2rem;
+      }
+      #contact .form-container {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        height: auto;
+        padding: 1.5rem;
+      }
+      .title {
+        font-size: 2.5rem;
+      }
+      .input-group label {
+        text-align: left;
+        font-size: 1.3rem;
+      }
+      .input-group input, .input-group textarea {
+        font-size: 1.3rem;
+      }
+      .sign {
+        width: 50%;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      #contact {
+        flex-direction: column;
+        gap: 30px;
+        padding: 30px 15px;
+        text-align: center;
+      }
+      #contact h2{
+        font-size: 2rem;
+      }
+      #contact .details {
+        gap: 20px;
+        min-width: 100px;
+      }
+      #contact .details p {
+        font-size: 1.5rem;
+      }
+      #contact .form-container {
+        width: 300px;
+        height: auto;
+        padding: 1rem;
+      }
+      .title {
+        font-size: 2rem;
+      }
+      .input-group label {
+        text-align: left;
+        font-size: 1.2rem;
+      }
+      .input-group input, .input-group textarea {
+        font-size: 1.2rem;
+      }
+      .sign {
+        width: 70%;
+      }
+    }
+    
