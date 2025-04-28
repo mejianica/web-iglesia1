@@ -87,11 +87,9 @@
         flex-direction: row-reverse;
         align-items: center;
     }
-
-    .title {
-        font-size: 2.8rem;
+    .container .logo{
+      height: 50px;
     }
-
     .nav-links {
         overflow: hidden;
         opacity: 0;
