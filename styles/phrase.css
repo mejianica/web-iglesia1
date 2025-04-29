@@ -10,6 +10,7 @@
   width: 100%;
   overflow: hidden;
   background-attachment: fixed;
+  
 }
 #padre-phrase::before {
   content: "";
@@ -20,12 +21,14 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.603);
   z-index: 1;
+  backdrop-filter: blur(5px); 
 }
 
 /* Para que el contenido dentro no quede tapado */
 #padre-phrase > * {
   position: relative;
   z-index: 2;
+  filter: blur(0px);
 }
 #phrase {
     display: flex;
