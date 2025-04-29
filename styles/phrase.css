@@ -10,7 +10,6 @@
   width: 100%;
   overflow: hidden;
   background-attachment: fixed;
-  
 }
 #padre-phrase::before {
   content: "";
@@ -38,33 +37,41 @@
     align-items: center;
     justify-content: space-around;
     padding: 100px 20px;
-    gap: 40px;
+    /* gap: 40px; */
     flex-direction: column;
   }  
   /* Texto */
   #phrase .txt-container {
     display: flex;
     flex-direction: column;
-    width: 48%;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
     gap: 30px;
-    border-bottom: 2px solid #E56A48;
     min-width: 280px;
+  }
+  #phrase .txt-container .border{
+    position: relative;
+    bottom: 30px;
+    height: 30px;
+    width: 50%;
+    border-bottom: 2px solid #E56A48;
   }
   #phrase .txt-container h2{
     font-size: 3rem;
     font-family: Poppins;
     font-weight: 400;
     color: #fff;
+    margin-bottom: 30px;
   }
 
-  /* Frase */
   #phrase .txt-container #phrase-text {
     text-align: left;
     color: #fff;
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   
-  /* Autor */
   #phrase .txt-container #author {
     font-weight: bold;
     font-size: 1.5rem;
@@ -72,8 +79,8 @@
   }
   
   #phrase .phrase-img img {
-    height: 500px;
-    width: 500px;
+    height: 450px;
+    width: 450px;
     object-fit: cover;
     /* clip-path: polygon(16% 0, 100% 0, 83% 100%, 0% 100%); */
     /* box-shadow: 1px 10px 10px rgb(201, 184, 184); */
@@ -82,5 +89,53 @@
     border: 5px #FFFFFF solid;
   }
   
+  
+@media (min-width: 1025px) and (max-width: 1440px) {
+
+}
+
+@media (max-width: 1024px) {
+  #phrase .txt-container h2{
+    font-size: 2.8rem;
+  }
+  #phrase .phrase-img img {
+    height: 400px;
+    width: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  #padre-phrase{ 
+    background-attachment: scroll;
+  }
+  #phrase .txt-container h2{
+    font-size: 2.5rem;
+  }
+  #phrase .txt-container #phrase-text {
+    font-size: 1.5rem;
+  }
+  #phrase .txt-container .border{
+    position: relative;
+    bottom: 30px;
+    height: 30px;
+    width: 70%;
+  }
+  #phrase .phrase-img img {
+    height: 300px;
+    width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  #phrase .txt-container h2{
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  #phrase .phrase-img img {
+    height: 200px;
+    width: 200px;
+  }
+}
+
   
   
