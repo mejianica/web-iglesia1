@@ -1,182 +1,76 @@
-
-  /* HEADER */
-  .container {
-      display: flex;
-      align-items: center;
-      justify-content: space-evenly;
-      width: 100%;
-      padding: 1rem;
-      z-index: 1000;
-      color: black;
-      background-color: #fff;
-      position: fixed;
-      top: 0;
-      min-height: 10vh;
-      box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.2);
-  }
-  ul, ol {
-    list-style:none;
+/* aumentando el tamaño de fuente a los item, y .dropdown-item */
+.navbar .nav-link,.dropdown-item {
+  font-size: 1.5rem;
+  font-family: inter;
+  font-weight: 300;
+}
+/* boton hamburguesa */
+/* padre del menu hamburguesa */
+.navbar-toggler {
+  background-color:rgba(0, 0, 0, 0.637);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 1rem;
+  font-size: 1.8rem; 
+}
+/* las 3 lineas del menu hamburguesa */
+.navbar-toggler .bar {
+  width: 20px;
+  height: 3px;
+  background-color: whitesmoke;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+/* nombre de la iglesia */
+.navbar .name{
+  font-family: inter;
+  font-weight: 500;
+  font-size: 2rem;
+  color: #CA2627;
+}
+.nav-link:hover{
+ color: rgb(196, 37, 37);
 }
 
-.nav-links > li {
-    float:left;
+.dropdown-item:hover{
+  color: #CA2627;
 }
-.nav-links li a {
-  text-align: center;
-  background-color:#ffff;
-  text-decoration:none;
-  padding:10px 12px;
-  display:block;
-}
-.nav-links li ul {
-  display:none;
-  position:absolute;
-  min-width:105px;
-}
-
-.nav-links li:hover > ul {
-  display:block;
+/* Estilo para el botón hamburguesa */
+.navbar-toggler {
+  background-color: rgba(0, 0, 0, 0.637);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 1rem;
+  font-size: 1.8rem;
 }
 
-.nav-links li ul li {
-  position:relative;
+/* Cuando el botón tiene la clase "open" (cuando se hace clic) */
+.navbar-toggler.open .bar:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px); /* Rotamos la primera barra */
 }
 
-.nav-links li ul li ul {
-  right:-140px;
-  top:0px;
+.navbar-toggler.open .bar:nth-child(2) {
+  opacity: 0; /* La segunda barra desaparece */
 }
-  .container .logo{
-    display: flex;
-    height: 70px;
-  }
-  /* MENÚ DE NAVEGACIÓN */
-  .nav-links {
-      display: flex;
-      list-style: none;
-      gap: 3rem; /* 30px */
-      font-size: 1.5rem;
-  }
-  
-  .nav-links a {
-      text-decoration: none;
-      color: black;
-      font-family: "Inter", sans-serif;
-      font-weight: 300;
-      
-      padding: 0.5rem;
-      transition: color 0.3s ease, transform 0.3s ease;
-  }
-  
-  .nav-links a:hover {
-      border-bottom:1px solid #e2876d;
-  }
-  .social a{
-    color: black;
-    padding: 10px;
-  
-  }
-  
-  .social-icons {
-    margin-top: 1rem;
-  }
-  
-  .social-icons a img {
-    width: 24px;
-    margin-right: 1rem;
-    transition: filter 0.3s ease;
-  }
-  
-  .social-icons a img:hover {
-    filter: grayscale(100%);
-  }
-  
-  /* MENÚ HAMBURGUESA */
-  .hamburguer {
-      display: none;
-      flex-direction: column;
-      cursor: pointer;
-      padding: 5px;
-  }
-  .bar {
-      width: 2.5rem;
-      height: 0.3rem;
-      background-color: #CD2129;
-      margin: 0.3rem 1rem;
-      transition: 0.4s;
-  }
-  
-  /* RESPONSIVE */
-  @media (max-width: 900px) {
-    .container {
-        padding: 1rem;
-        justify-content: space-between;
-    }
-  }
-  @media (max-width: 768px) {
-    .container {
-        padding: 1rem;
-        justify-content: space-between;
-        flex-direction: row-reverse;
-        align-items: center;
-    }
-    .container .logo{
-      height: 50px;
-    }
-    .nav-links {
-        overflow: hidden;
-        opacity: 0;
-        flex-direction: column;
-        position: absolute;
-        top: 0;
-        right: 0;
-        top: 10vh;
-        height: 90vh;
-        width: 232px;
-        background-color: whitesmoke;
-        text-align: center;
-        border-radius: 0 0 10px 10px;
-        gap: 2px;
-        color: rgb(48, 46, 46);
-        line-height: 25px;
-        box-shadow: 0 3px 5px 0 rgb(184, 181, 181);
-        transform: translateX(100%);
-        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-        display: none;
-    }
 
-    .nav-links.active {
-        display: flex;
-        opacity: 1;
-        transform: translateX(0);
-    }
+.navbar-toggler.open .bar:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px); /* Rotamos la tercera barra */
+}
 
-    .nav-links li {
-        min-height: 5vh;
-        display: flex;
-        align-items: center; 
-        justify-content: center; 
-        border-bottom: 1px solid rgba(128, 128, 128, 0.192);
-        border-image: linear-gradient(to right, rgba(128, 128, 128, 0.048), rgba(128, 128, 128, 0.192)) 1;
-    }
+@media (max-width: 720px) {
+  .navbar .name{
+   font-size: 1.6rem;
+  }
+}
 
-    .nav-links li a {
-        width: 100%; 
-        text-align: center; 
-        padding: 10px 0; 
-    }
-
-    .logo {
-      order: 11;
+@media (max-width: 480px) {
+  .navbar .name{
+   display: none;
   }
-  
-  .social {
-      display: flex;
-      gap: 10px;
-  }
-  
-  .hamburguer {
-      display: flex;
-  }
-  
 }

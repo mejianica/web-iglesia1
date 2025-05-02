@@ -3,9 +3,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 90vh; 
+    /* min-height: 92vh;  */
     overflow: hidden;
-    top: 10vh;
+    top: 9vh;
+    min-height: 100vh;
 }
 
 /* Video de fondo */

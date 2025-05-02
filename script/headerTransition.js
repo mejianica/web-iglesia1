@@ -1,7 +1,7 @@
 gsap.registerPlugin(ScrollToPlugin);
 
 // Selecciona todos los enlaces dentro del header y footer 
-document.querySelectorAll('header a, .btn a, footer a').forEach(anchor => {
+document.querySelectorAll('navbar-nav li a, footer a').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
     e.preventDefault();
 
