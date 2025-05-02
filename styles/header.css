@@ -14,6 +14,38 @@
       min-height: 10vh;
       box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.2);
   }
+  ul, ol {
+    list-style:none;
+}
+
+.nav-links > li {
+    float:left;
+}
+.nav-links li a {
+  text-align: center;
+  background-color:#ffff;
+  text-decoration:none;
+  padding:10px 12px;
+  display:block;
+}
+.nav-links li ul {
+  display:none;
+  position:absolute;
+  min-width:105px;
+}
+
+.nav-links li:hover > ul {
+  display:block;
+}
+
+.nav-links li ul li {
+  position:relative;
+}
+
+.nav-links li ul li ul {
+  right:-140px;
+  top:0px;
+}
   .container .logo{
     display: flex;
     height: 70px;
